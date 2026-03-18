@@ -1,0 +1,40 @@
+[
+  {
+    "product_id": "E1001",
+    "name": "TV X",
+    "category": "Electronics",
+    "price": 45000,
+    "brand": "Kumar",
+    "specifications": {
+      "ram": "8GB",
+      "storage": "128GB",
+      "voltage": "220V"
+    },
+    "warranty_years": 2,
+    "features": ["5G", "OLED Display", "Fast Charging"]
+  },
+  {
+    "product_id": "C2001",
+    "name": "Kid's T-Shirt",
+    "category": "Clothing",
+    "price": 499,
+    "brand": "Puma",
+    "sizes": ["S", "M", "L", "XL"],
+    "material": "Silk",
+    "colors": ["White", "Blue", "Black"]
+  },
+  {
+    "product_id": "G3001",
+    "name": "Organic Eggs",
+    "category": "Groceries",
+    "price": 150,
+    "brand": "ChickenFarm",
+    "expiry_date": "2024-12-20",
+    "nutritional_info": {
+      "calories": 150,
+      "protein": "8g",
+      "fat": "5g"
+    },
+    "tags": ["organic", "eggs"]
+  }
+]
