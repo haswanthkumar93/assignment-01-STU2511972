@@ -7,4 +7,3 @@ The architecture maintains a clear separation between OLTP and OLAP workloads to
 
 Trade offs
 A major trade off in this design is balancing real time insight with architectural complexity. Streaming ICU signals through technologies like Kafka enables immediate alerts and live dashboards but introduces extra components to deploy, monitor, and secure, increasing operational overhead. To manage this, a hybrid strategy is used: life critical vitals are processed in real time, while less urgent measurements are batched and written to the data lake for later analysis. This keeps the streaming layer focused on high value events and limits unnecessary load. Using managed cloud services—such as hosted Kafka and serverless ETL tools—further reduces the burden of infrastructure management, though at somewhat higher ongoing cost, and improves reliability and scalability in a healthcare setting.
-
