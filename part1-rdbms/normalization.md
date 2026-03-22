@@ -18,7 +18,8 @@ If a customer appears in only one row and that row is deleted, all customer info
 This leads to unintended data loss.
 
 
-section 1.2
+## Normalization Justification
+
 The argument that keeping all data in a single table is simpler is misleading, as it introduces significant data integrity and maintenance issues. In the given dataset, customer, product, order, and sales representative information are all stored together, leading to redundancy and anomalies.
 
 For instance, the sales_rep_id "SR01" appears multiple times with inconsistent office_address values such as "Nariman Point" and "Nariman Pt". This demonstrates an update anomaly, where modifying a single piece of information requires changes across multiple rows, increasing the likelihood of inconsistencies.

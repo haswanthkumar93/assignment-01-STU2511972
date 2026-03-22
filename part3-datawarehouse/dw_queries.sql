@@ -1,3 +1,4 @@
+-- Q1: Total sales revenue by product category for each month
 SELECT 
     d.year,
     d.month,
@@ -8,6 +9,7 @@ JOIN dim_date d ON f.date_id = d.date_id
 JOIN dim_product p ON f.product_id = p.product_id
 GROUP BY d.year, d.month, p.category;
 
+-- Q2: Top 2 performing stores by total revenue
 SELECT 
     s.store_name,
     SUM(f.total_amount) AS total_revenue
@@ -17,6 +19,7 @@ GROUP BY s.store_name
 ORDER BY total_revenue DESC
 LIMIT 2;
 
+-- Q3: Month-over-month sales trend across all stores
 SELECT 
     d.year,
     d.month,
